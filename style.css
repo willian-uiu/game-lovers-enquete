@@ -14,15 +14,36 @@ body {
     color: #FECD23;
 }
 
+.header-subtitle {
+    margin: 1rem;
+}
+
 .container-form {
     background-color: #631E6F;
 }
 
 .header-form {
     font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .card {
     background-color: #4064F0;
     font-size: 1.2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    border-style: none;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
 }
