@@ -4,14 +4,32 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+object {
+    width: 8rem;
+}
+
+button {
+    background-color: #1D0C20;
+    color: #FFFFE8;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+}
+
 .container {
+    display: flex;
+    flex-direction: column;
     background-color: #240E28;
     text-align: center;
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
 }
 
 .header {
     font-size: 2rem;
     color: #FECD23;
+    padding: 1rem;
 }
 
 .header-subtitle {
@@ -20,16 +38,44 @@ body {
 
 .container-form {
     background-color: #631E6F;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .header-form {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card {
+    border-radius: 10px;
+    margin: 10px;
     background-color: #4064F0;
     font-size: 1.2rem;
+    width: 10rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: #2736D4;
+
+}
+
+.title-card {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .inputs {
@@ -38,12 +84,58 @@ body {
     align-items: center;
 }
 
-.input {
+
+input {
     border-style: none;
-    width: 30%;
+    width: 60%;
     box-sizing: border-box;
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 1.2rem;
     font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #a3a3a3;
+}
+
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+    }
+    
+    .header-subtitle {
+        margin: 0.6rem;
+    }
+
+    .container-form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    input {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .header-form {
+        margin: 3px;
+    }
 }
