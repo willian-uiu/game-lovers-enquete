@@ -1,15 +1,28 @@
 body {
     background-color: #CCCCCC;
+    color: #FFFFE8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     background-color: #240E28;
+    text-align: center;
+}
+
+.header {
+    font-size: 2rem;
+    color: #FECD23;
 }
 
 .container-form {
     background-color: #631E6F;
 }
 
+.header-form {
+    font-size: 1.4rem;
+}
+
 .card {
     background-color: #4064F0;
+    font-size: 1.2rem;
 }
